@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <fieldset style="background-color: rgb(238, 231, 231);">
+        <legend>Student Registration</legend>
+        <br>
+        <label>Name:</label><br>
+        <input type="text" name="nama" placeholder="First Name" />
+        <input type="text" name="nama" placeholder="Last Name" />
+        <br><br>
+        <label>Date of Birth:</label><br>
+        <input type="date" name="tanggal" />
+        <br><br>
+        <label>Gender:</label>
+        <label><input type="radio" name="jenis_kelamin" value="laki-laki" />Male</label>
+        <label><input type="radio" name="jenis_kelamin" value="perempuan" />Female</label>
+        <br><br>
+        <label>Address:</label>
+        <div>
+            <textarea name="Address" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Email" />
+        <br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Password" /><br><br>
+        <input type="password" name="password" placeholder="Confirm Password">
+        </fieldset><br>
+        <div>
+            <input type="submit" value="Register Now" name="proses" />
+        </div>
+    </form>
+</body>
+</html>
